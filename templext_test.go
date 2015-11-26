@@ -1,4 +1,4 @@
-package templex
+package templext
 
 import (
 	"testing"
