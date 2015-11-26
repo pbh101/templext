@@ -46,7 +46,7 @@ Center centers string.
 ``` go
 func Compile(s string, d map[string]interface{}) (*bytes.Buffer, error)
 ```
-Parse template.
+Compile template.
 
 
 ## func Date

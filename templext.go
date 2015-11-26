@@ -42,7 +42,7 @@ var funcs = template.FuncMap{
 	"date":       Date,
 }
 
-// Parse template.
+// Compile template.
 func Compile(s string, d map[string]interface{}) (*bytes.Buffer, error) {
 	t := template.Must(template.New("template").Funcs(funcs).Parse(s))
 
