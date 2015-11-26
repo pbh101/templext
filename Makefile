@@ -9,4 +9,4 @@ test: format
 	go build
 
 readme:
-	godoc2md . >README.md
+	godoc2md github.com/imc-trading/templext >README.md

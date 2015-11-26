@@ -1,6 +1,6 @@
 
 # templex
-    import "."
+    import "github.com/imc-trading/templext"
 
 
 
