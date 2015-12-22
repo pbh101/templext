@@ -12,7 +12,7 @@ import (
 	"github.com/jehiah/go-strftime"
 )
 
-var funcs = template.FuncMap{
+var Funcs = template.FuncMap{
 	"last":       Last,
 	"join":       Join,
 	"split":      Split,
@@ -44,7 +44,7 @@ var funcs = template.FuncMap{
 
 // Compile template.
 func Compile(s string, d map[string]interface{}) (*bytes.Buffer, error) {
-	t := template.Must(template.New("template").Funcs(funcs).Parse(s))
+	t := template.Must(template.New("template").Funcs(Funcs).Parse(s))
 
 	b := new(bytes.Buffer)
 	err := t.Execute(b, d)
